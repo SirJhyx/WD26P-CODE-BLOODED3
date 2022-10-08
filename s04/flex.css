@@ -23,7 +23,7 @@ Flexbox
     /* justify-content: flex-start; */
     /*default*/
 
-    /* justify-content: center; */
+    justify-content: center;
     /*align items in center*/
 
     /* justify-content: flex-end; */
@@ -61,6 +61,7 @@ Flexbox
     /* flex-wrap: wrap-reverse; */
 
     /*Align - items proerty*/
+
     /* align-items: stretch; */
     /*default*/
 
