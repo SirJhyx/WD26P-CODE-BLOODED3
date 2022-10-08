@@ -93,3 +93,32 @@ a:hover{
 a:active{
     color: dodgerblue;
 }
+
+/*
+Pseudo elements - used to styled a specific part of an element.
+syntax: selector:: pseudo-element {property:value}
+*/
+/*first line - when we shrink or resize our web pages, 
+the first line makes a changes*/
+/* p::first-line{
+    color: #f00;
+    font-variant: small-caps;
+} */
+
+p::first-letter{
+    color: brown;
+    font-size: 200%;
+}
+/*manipulating pictures in css*/
+#one_piece img{
+    width: 10%;
+    height: 10%;
+    border-radius: 4px;
+}
+li{
+    list-style-type:none;
+}
+ul > li{
+    letter-spacing: 4px;
+}
+
