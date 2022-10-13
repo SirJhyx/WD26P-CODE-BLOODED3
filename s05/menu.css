@@ -1,0 +1,31 @@
+ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    /*
+    overflow properties
+
+        hidden - hides the rest of content
+        visible - it shows all the content
+        scroll - create scroll box when the contetn is overflow
+        auto - whe it is need, it creates a scrollbox
+    */
+
+    /* Overflow - controls what happens to the content that is too big to fit into the area*/
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: inline-block;
+    padding: 8px;
+    background-color:gray;
+    text-decoration:none;
+}
+
+li a:hover{
+    background-color: white;
+}
