@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Survey Form</title>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/form.css">
+    <!-- Bootstrap v5 online link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <body  class="bg-primary">
+    <div class="survey-form">
+        <form class="needs-validation">
+            <h1 class="text-center">
+                ABC Company IT Support Requst Form
+            </h1>
+            <div class="input-group  was-validated">
+                <span class="input-group-text">First and Last name</span>
+                <input type="text" aria-label="First name" class="form-control text-uppercase" placeholder="First Name" cols="50" rows="1" required>
+                <input type="text" aria-label="Last name" class="form-control text-uppercase" placeholder="Last Name"  cols="50" rows="1" required>
+              </div>
+
+            </h1>
+            <div class="input-group  was-validated">
+                <span class="input-group-text">Email and Contact Number</span>
+                <input type="text" aria-label="email" class="form-control" placeholder="Email" cols="50" rows="1" required>
+                <input type="text" aria-label="cNumber" class="form-control" placeholder="Contact Number"  cols="50" rows="1" required>
+              </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked1" checked>
+                <label class="form-check-label" for="flexSwitchCheckChecked">Onsite</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked2" checked>
+                <label class="form-check-label" for="flexSwitchCheckChecked">Online</label>
+            </div>
+
+            <label for="">
+                <p>
+                    Location:<br>
+                    For Onsite, please state your Workstation NO...Departnet.Floor and Building.<br>
+                    For Work from home, please complete your address and inclued a landmark nearest to your location.
+                </p>
+            </label>
+            
+            <div class="form-floating">
+                <textarea class="form-control" id="floatingTextarea1"></textarea>
+                <label for="floatingTextarea2">Type Here</label>
+            </div>
+
+            <div>
+                <label for="SRT" class="srt">Service Request Type:</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">Select</option>
+                    <option value="2">Desktop/Laptop Setup</option>
+                    <option value="3">Desktop/Laptop Support</option>
+                    <option value="4">Desktop/Laptop Maintenance</option>
+                    <option value="5">Software Installation</option>
+                    <option value="6">Software Support</option>
+                    <option value="7">Computer Peripheral Setup</option>
+                    <option value="8">Computer Peripheral Troubleshooting</option>
+                    <option value="9">Computer Maintenance</option>
+                  </select>
+            </div>
+
+            <p class="request-description">
+                Request Description:
+            </p>
+            <div class="form-floating">
+                <textarea class="form-control" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Explain your service request as details as possible</label>
+            </div>
+
+            <p class="upload">
+                Upload Picture ScreenShot for reference 
+              <form action="" name="" method="">
+                <input type="FIle">
+              </form>
+            </p>
+
+            <button type="submit" onclick="show_alert()" id="btn1">Submit</button>
+            <button type="reset" id="btn2">Reset</button>
+        </form>
+    </div>
+	<!-- script Area -->
+    <script>
+        function show_alert()
+        {
+            alert("Thanks for submitting your request");
+        }
+    </script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
